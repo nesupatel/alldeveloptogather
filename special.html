@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Inside Tree</title>
+
+  <!-- Link to CSS Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css" media="screen" charset="utf-8">
+
+  <!-- Neshma added link to js file -->
+  <script type="text/javascript" src="/js/script.js"></script>
+
+
+  <!-- Bootstrap compiled CSS CDN STARTS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+  <!-- Bootstrap compiled CSS  CDN ENDS -->
+
+</head>
+
+<body>
+
+  <script type="text/javascript" src="/js/script.js"></script>
+  <!-- BootStrap compiled js CDN STARTS-->
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+  <!-- BootStrap compiled js CDN ENDS-->
+
+  <div class="wfm">
+    <ul>
+      <li style="background-color: #9DB0F6; color: rgb(243, 241, 241); text-align: left;">
+        <h1>
+          <b>Root</b>
+        </h1>
+      </li>
+    </ul>
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <button onclick="myFunction()" class="dropbtn" style="color:blue">Click Me to Generate Factories (Expand list: (+) )(collapse list: (-))</button>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <div id="myDIV" class="dropdown-content">
+      <ul>
+        <li>
+
+
+
+          <div>
+            <img alt="" class="expand" src="/images/Minus.png" />
+            <img alt="" class="collapse" src="/images/Plus.png" />
+          </div>
+          <div id="dynamic-list1"></div>
+
+          <ul>
+            <li>
+              <div>
+                <img alt="" class="expand" src="/images/Minus.png" />
+                <img alt="" class="collapse" src="/images/Plus.png" />
+              </div>
+              <div id="demo1" align="left"></div>
+            </li>
+          </ul>
+
+
+        </li>
+
+
+
+        <li>
+
+          <div>
+            <img alt="" class="expand" src="/images/Minus.png" />
+            <img alt="" class="collapse" src="/images/Plus.png" />
+          </div>
+          <div id="dynamic-list2"></div>
+          <ul>
+            <li>
+              <div>
+                <img alt="" class="expand" src="/images/Minus.png" />
+                <img alt="" class="collapse" src="/images/Plus.png" />
+              </div>
+              <div id="demo2" align="left"></div>
+            </li>
+          </ul>
+
+        </li>
+
+        <li>
+
+          <div>
+            <img alt="" class="expand" src="/images/Minus.png" />
+            <img alt="" class="collapse" src="/images/Plus.png" />
+          </div>
+          <div id="dynamic-list3"></div>
+          <ul>
+            <li>
+              <div>
+                <img alt="" class="expand" src="/images/Minus.png" />
+                <img alt="" class="collapse" src="/images/Plus.png" />
+              </div>
+              <div id="demo3" align="left"></div>
+            </li>
+          </ul>
+
+        </li>
+
+
+      </ul>
+
+    </div>
+
+  </div>
+
+
+  <div class="userip">
+
+    <div class="jumbotron">
+<form>
+      <fieldset>
+        <legend>Factory1: </legend>
+
+          <span>
+            <input type="text" id="candidate1" size="3%" placeholder="text" required />
+          </span>
+          <span>
+            <button type="button" class="btn btn-primary" onclick="addItem1()">ADD</button>
+          </span>
+          <span></span>
+          <button type="button" class="btn btn-primary" onclick="removeItem1()">REMOVE</button>
+          </span>
+          <span>Max:
+            <input type="text" id="rnum1" size="2%" placeholder="Number" required>
+          </span>
+          <span>Min:
+            <input type="text" id="rnum2" size="2%" placeholder="Number" required>
+          </span>
+          <span>Child:
+            <input type="text" id="count1" size="1%" placeholder="Number" required>
+          </span>
+          <br>
+          <br>
+          <button type="button" class="btn btn-success btn-block" onclick="addmethod1()">SUBMIT</button>
+        </fieldset>
+      </form>
+
+      <form>
+          <fieldset>
+            <legend>Factory2: </legend>
+
+          <span>
+            <input type="text" id="candidate2" size="3%" placeholder="text" required />
+          </span>
+          <span>
+            <button type="button" class="btn btn-primary" onclick="addItem2()">ADD</button>
+          </span>
+          <span></span>
+          <button type="button" class="btn btn-primary" onclick="removeItem2()">REMOVE</button>
+          </span>
+          <span>Max:
+            <input type="text" id="rnum3" size="2%" placeholder="Number" required>
+          </span>
+          <span>Min:
+            <input type="text" id="rnum4" size="2%" placeholder="Number" required>
+          </span>
+          <span>Child:
+            <input type="text" id="count2" size="1%" placeholder="Number" required>
+          </span>
+          <br>
+          <br>
+          <button type="button" class="btn btn-success btn-block" onclick="addmethod2()">SUBMIT</button>
+        </fieldset>
+      </form>
+
+
+      
+      <form>
+          <fieldset>
+            <legend>Factory3: </legend>
+          <span>
+            <input type="text" id="candidate3" size="3%" placeholder="text" required />
+          </span>
+          <span>
+            <button type="button" class="btn btn-primary" onclick="addItem3()">ADD</button>
+          </span>
+          <span></span>
+          <button type="button" class="btn btn-primary" onclick="removeItem3()">REMOVE</button>
+          </span>
+          <span>Max:
+            <input type="text" id="rnum5" size="2%"  placeholder="Number" required>
+          </span>
+          <span>Min:
+            <input type="text" id="rnum6" size="2%" placeholder="Number" required>
+          </span>
+          <span>Child:
+            <input type="text" id="count3" size="1%" placeholder="Number" required>
+          </span>
+          <br>
+          <br>
+          <button type="button" class="btn btn-success btn-block" onclick="addmethod3()">SUBMIT</button>
+          <br>
+          <br>
+
+         
+
+          <button type="button" class="btn btn-primary"><a href="/ideas/add" style="font-family:courier; color: white">Add Info To Database</a></button>
+          
+            
+        
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  
+
+
+
+  <script type="text/javascript" language="javascript">
+/* Image buttons starts*/
+$(".expand").click(function () {
+  $(this).toggle();
+  $(this).next().toggle();
+  $(this).parent().parent().children().last().toggle();
+});
+$(".collapse").click(function () {
+  $(this).toggle();
+  $(this).prev().toggle();
+  $(this).parent().parent().children().last().toggle();
+});
+
+$("input[type='checkbox']").click(function () {
+  if ($(this).attr("checked") == false) {
+      $(this).parent().parent().find("input[type='checkbox']").each(function () {
+          $(this).removeAttr("checked");
+      });
+  }
+  else {
+      $(this).parent().parent().find("input[type='checkbox']").each(function () {
+          $(this).attr("checked", "checked");
+      });
+  }
+});
+
+/*image buttons ends*/
+  </script>
+</body>
+
+</html>

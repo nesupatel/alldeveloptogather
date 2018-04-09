@@ -1,0 +1,17 @@
+{
+  "name": "treeviewapp",
+  "version": "1.0.0",
+  "description": "Treeview App for Challenge Completion",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Neshma Patel",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.10",
+    "mongoose": "^5.0.13"
+  }
+}
